@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/chrishaas/vendi-cache-2/src</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href=".css/bootstrap.min.css" rel="stylesheet">
+  <link href=".css/nv.d3.min.css" rel="stylesheet">
+  <link href=".css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src=".js/html5shiv.min.js"></script>
+  <script src=".js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="index.html">/home/chrishaas/vendi-cache-2/src</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Auditing.php.html#9">Auditing</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/WpCookies.php.html#5">WpCookies</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ErrorHandler.php.html#5">ErrorHandler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheSettings.php.html#7">CacheSettings</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#25">CacheMaster</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheExclusions.php.html#5">CacheExclusions</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/WpInstalling.php.html#5">WpInstalling</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/WpCorePage.php.html#5">WpCorePage</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/QueryString.php.html#5">QueryString</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/AbstractCacheBypass.php.html#8">AbstractCacheBypass</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/PhpError.php.html#5">PhpError</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/MaintenanceMode.php.html#5">MaintenanceMode</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/LoggedInUser.php.html#5">LoggedInUser</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/LegacyConstants.php.html#5">LegacyConstants</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/HttpRequestMethod.php.html#5">HttpRequestMethod</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/CronMode.php.html#5">CronMode</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/AjaxMode.php.html#5">AjaxMode</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Logging.php.html#10">Logging</a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="CacheMaster.php.html#25">CacheMaster</a></td><td class="text-right">3782</td></tr>
+       <tr><td><a href="CacheSettings.php.html#7">CacheSettings</a></td><td class="text-right">930</td></tr>
+       <tr><td><a href="Logging.php.html#10">Logging</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="CacheBypasses/WpCookies.php.html#5">WpCookies</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="ErrorHandler.php.html#5">ErrorHandler</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Auditing.php.html#9">Auditing</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="CacheBypasses/MaintenanceMode.php.html#5">MaintenanceMode</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="CacheBypasses/AjaxMode.php.html#5">AjaxMode</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="CacheBypasses/CronMode.php.html#5">CronMode</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="CacheExclusions.php.html#5">CacheExclusions</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="CacheBypasses/LoggedInUser.php.html#5">LoggedInUser</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CacheBypasses/WpCorePage.php.html#5">WpCorePage</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CacheBypasses/WpInstalling.php.html#5">WpInstalling</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CacheBypasses/LegacyConstants.php.html#5">LegacyConstants</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CacheBypasses/PhpError.php.html#5">PhpError</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CacheBypasses/HttpRequestMethod.php.html#5">HttpRequestMethod</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CacheBypasses/QueryString.php.html#5">QueryString</a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Auditing.php.html#13"><abbr title="Auditing::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#501"><abbr title="CacheMaster::schedule_cache_clear">schedule_cache_clear</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheSettings.php.html#13"><abbr title="CacheSettings::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#545"><abbr title="CacheMaster::delete_cache_dir_contents">delete_cache_dir_contents</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#540"><abbr title="CacheMaster::write_file">write_file</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#535"><abbr title="CacheMaster::delete_file">delete_file</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#530"><abbr title="CacheMaster::file_exists">file_exists</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#524"><abbr title="CacheMaster::handle_action_clear_page_cache">handle_action_clear_page_cache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#488"><abbr title="CacheMaster::clear_entire_page_cache">clear_entire_page_cache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheSettings.php.html#28"><abbr title="CacheSettings::get_cache_folder_abs">get_cache_folder_abs</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#469"><abbr title="CacheMaster::delete_file_from_permalink">delete_file_from_permalink</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#461"><abbr title="CacheMaster::handle_action_publish_post">handle_action_publish_post</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#452"><abbr title="CacheMaster::handle_filter_redirect_filter">handle_filter_redirect_filter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#442"><abbr title="CacheMaster::handle_action_comment_post">handle_action_comment_post</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#416"><abbr title="CacheMaster::setup_caching">setup_caching</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#399"><abbr title="CacheMaster::is_https_page">is_https_page</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheSettings.php.html#18"><abbr title="CacheSettings::get_instance">get_instance</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheSettings.php.html#51"><abbr title="CacheSettings::get_log_file_abs">get_log_file_abs</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#299"><abbr title="CacheMaster::_setup_actual_request_caching">_setup_actual_request_caching</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheSettings.php.html#157"><abbr title="CacheSettings::get_is_auditing_enabled">get_is_auditing_enabled</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Logging.php.html#82"><abbr title="Logging::get_logger">get_logger</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Logging.php.html#72"><abbr title="Logging::get_instance">get_instance</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Logging.php.html#64"><abbr title="Logging::anonymousFunction:64#363">anonymousFunction:64#363</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Logging.php.html#18"><abbr title="Logging::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ErrorHandler.php.html#40"><abbr title="ErrorHandler::handle_error">handle_error</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ErrorHandler.php.html#15"><abbr title="ErrorHandler::handle_exception">handle_exception</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheSettings.php.html#147"><abbr title="CacheSettings::get_logging_level">get_logging_level</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheSettings.php.html#61"><abbr title="CacheSettings::get_log_folder_abs">get_log_folder_abs</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheSettings.php.html#142"><abbr title="CacheSettings::get_fs_permission_for_log_dir">get_fs_permission_for_log_dir</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheSettings.php.html#137"><abbr title="CacheSettings::get_fs_permission_for_log_file">get_fs_permission_for_log_file</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheSettings.php.html#121"><abbr title="CacheSettings::get_fs_permissions_for_cache">get_fs_permissions_for_cache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheSettings.php.html#111"><abbr title="CacheSettings::get_min_page_size">get_min_page_size</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheSettings.php.html#97"><abbr title="CacheSettings::get_max_file_age">get_max_file_age</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheSettings.php.html#78"><abbr title="CacheSettings::get_log_file_name">get_log_file_name</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#319"><abbr title="CacheMaster::handle_ob_complete">handle_ob_complete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#238"><abbr title="CacheMaster::_maybe_serve_cached_file">_maybe_serve_cached_file</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Auditing.php.html#18"><abbr title="Auditing::get_instance">get_instance</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/AbstractCacheBypass.php.html#35"><abbr title="AbstractCacheBypass::get_path_url">get_path_url</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/LegacyConstants.php.html#7"><abbr title="LegacyConstants::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/HttpRequestMethod.php.html#7"><abbr title="HttpRequestMethod::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/CronMode.php.html#7"><abbr title="CronMode::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/AjaxMode.php.html#7"><abbr title="AjaxMode::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/AbstractCacheBypass.php.html#47"><abbr title="AbstractCacheBypass::log_request_as_not_cacheable">log_request_as_not_cacheable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/AbstractCacheBypass.php.html#42"><abbr title="AbstractCacheBypass::get_cookies">get_cookies</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/AbstractCacheBypass.php.html#30"><abbr title="AbstractCacheBypass::get_method">get_method</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/MaintenanceMode.php.html#7"><abbr title="MaintenanceMode::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/AbstractCacheBypass.php.html#25"><abbr title="AbstractCacheBypass::get_query_string">get_query_string</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/AbstractCacheBypass.php.html#20"><abbr title="AbstractCacheBypass::get_url">get_url</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/AbstractCacheBypass.php.html#14"><abbr title="AbstractCacheBypass::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Auditing.php.html#38"><abbr title="Auditing::audit_request_written_to_disk">audit_request_written_to_disk</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Auditing.php.html#33"><abbr title="Auditing::audit_cache_disabled_for_request">audit_cache_disabled_for_request</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Auditing.php.html#28"><abbr title="Auditing::audit_url_requested">audit_url_requested</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/LoggedInUser.php.html#7"><abbr title="LoggedInUser::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/PhpError.php.html#7"><abbr title="PhpError::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#233"><abbr title="CacheMaster::_flag_request_as_not_cacheable">_flag_request_as_not_cacheable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#68"><abbr title="CacheMaster::get_instance">get_instance</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#222"><abbr title="CacheMaster::_flag_request_as_cacheable">_flag_request_as_cacheable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#179"><abbr title="CacheMaster::is_request_cacheable">is_request_cacheable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#164"><abbr title="CacheMaster::_maybe_purge_cached_file_on_non_GET_method">_maybe_purge_cached_file_on_non_GET_method</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#99"><abbr title="CacheMaster::_setup_main_hooks">_setup_main_hooks</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#92"><abbr title="CacheMaster::_set_ajax_only_hooks">_set_ajax_only_hooks</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#86"><abbr title="CacheMaster::is_user_logged_in">is_user_logged_in</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheMaster.php.html#44"><abbr title="CacheMaster::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/QueryString.php.html#7"><abbr title="QueryString::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheExclusions.php.html#25"><abbr title="CacheExclusions::get_exclusion_rule_for_request">get_exclusion_rule_for_request</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheExclusions.php.html#14"><abbr title="CacheExclusions::get_instance">get_instance</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheExclusions.php.html#9"><abbr title="CacheExclusions::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/WpInstalling.php.html#7"><abbr title="WpInstalling::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/WpCorePage.php.html#7"><abbr title="WpCorePage::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CacheBypasses/WpCookies.php.html#7"><abbr title="WpCookies::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Logging.php.html#87"><abbr title="Logging::log_request_as_not_cacheable">log_request_as_not_cacheable</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="CacheMaster.php.html#319"><abbr title="CacheMaster::handle_ob_complete">handle_ob_complete</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="CacheMaster.php.html#99"><abbr title="CacheMaster::_setup_main_hooks">_setup_main_hooks</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="CacheMaster.php.html#545"><abbr title="CacheMaster::delete_cache_dir_contents">delete_cache_dir_contents</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="CacheBypasses/WpCookies.php.html#7"><abbr title="WpCookies::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="CacheBypasses/CronMode.php.html#7"><abbr title="CronMode::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="CacheBypasses/MaintenanceMode.php.html#7"><abbr title="MaintenanceMode::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="CacheBypasses/AjaxMode.php.html#7"><abbr title="AjaxMode::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="CacheSettings.php.html#121"><abbr title="CacheSettings::get_fs_permissions_for_cache">get_fs_permissions_for_cache</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="CacheMaster.php.html#238"><abbr title="CacheMaster::_maybe_serve_cached_file">_maybe_serve_cached_file</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="ErrorHandler.php.html#15"><abbr title="ErrorHandler::handle_exception">handle_exception</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="CacheMaster.php.html#179"><abbr title="CacheMaster::is_request_cacheable">is_request_cacheable</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="CacheMaster.php.html#164"><abbr title="CacheMaster::_maybe_purge_cached_file_on_non_GET_method">_maybe_purge_cached_file_on_non_GET_method</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CacheSettings.php.html#78"><abbr title="CacheSettings::get_log_file_name">get_log_file_name</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CacheMaster.php.html#416"><abbr title="CacheMaster::setup_caching">setup_caching</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CacheMaster.php.html#399"><abbr title="CacheMaster::is_https_page">is_https_page</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CacheSettings.php.html#28"><abbr title="CacheSettings::get_cache_folder_abs">get_cache_folder_abs</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CacheBypasses/WpInstalling.php.html#7"><abbr title="WpInstalling::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CacheBypasses/WpCorePage.php.html#7"><abbr title="WpCorePage::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CacheBypasses/LoggedInUser.php.html#7"><abbr title="LoggedInUser::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CacheBypasses/LegacyConstants.php.html#7"><abbr title="LegacyConstants::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Logging.php.html#18"><abbr title="Logging::__construct">__construct</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CacheSettings.php.html#61"><abbr title="CacheSettings::get_log_folder_abs">get_log_folder_abs</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CacheSettings.php.html#142"><abbr title="CacheSettings::get_fs_permission_for_log_dir">get_fs_permission_for_log_dir</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CacheSettings.php.html#137"><abbr title="CacheSettings::get_fs_permission_for_log_file">get_fs_permission_for_log_file</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CacheSettings.php.html#147"><abbr title="CacheSettings::get_logging_level">get_logging_level</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ErrorHandler.php.html#40"><abbr title="ErrorHandler::handle_error">handle_error</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CacheSettings.php.html#111"><abbr title="CacheSettings::get_min_page_size">get_min_page_size</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CacheSettings.php.html#97"><abbr title="CacheSettings::get_max_file_age">get_max_file_age</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Auditing.php.html#18"><abbr title="Auditing::get_instance">get_instance</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CacheSettings.php.html#51"><abbr title="CacheSettings::get_log_file_abs">get_log_file_abs</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CacheSettings.php.html#18"><abbr title="CacheSettings::get_instance">get_instance</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CacheMaster.php.html#501"><abbr title="CacheMaster::schedule_cache_clear">schedule_cache_clear</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CacheMaster.php.html#488"><abbr title="CacheMaster::clear_entire_page_cache">clear_entire_page_cache</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CacheMaster.php.html#469"><abbr title="CacheMaster::delete_file_from_permalink">delete_file_from_permalink</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CacheMaster.php.html#299"><abbr title="CacheMaster::_setup_actual_request_caching">_setup_actual_request_caching</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CacheMaster.php.html#222"><abbr title="CacheMaster::_flag_request_as_cacheable">_flag_request_as_cacheable</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CacheMaster.php.html#68"><abbr title="CacheMaster::get_instance">get_instance</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CacheExclusions.php.html#14"><abbr title="CacheExclusions::get_instance">get_instance</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CacheBypasses/QueryString.php.html#7"><abbr title="QueryString::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CacheBypasses/PhpError.php.html#7"><abbr title="PhpError::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CacheBypasses/HttpRequestMethod.php.html#7"><abbr title="HttpRequestMethod::is_cacheable">is_cacheable</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Logging.php.html#72"><abbr title="Logging::get_instance">get_instance</abbr></a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 5.2.2</a> using <a href="https://secure.php.net/" target="_top">PHP 7.1.9-1+ubuntu16.04.1+deb.sury.org+1</a> with <a href="https://xdebug.org/">Xdebug 2.5.5</a> and <a href="https://phpunit.de/">PHPUnit 6.3.1</a> at Tue Oct 3 19:58:11 UTC 2017.</small>
+    </p>
+   </footer>
+  </div>
+  <script src=".js/jquery.min.js" type="text/javascript"></script>
+  <script src=".js/bootstrap.min.js" type="text/javascript"></script>
+  <script src=".js/holder.min.js" type="text/javascript"></script>
+  <script src=".js/d3.min.js" type="text/javascript"></script>
+  <script src=".js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([18,0,0,0,0,0,0,0,0,0,0,1], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([71,0,0,0,0,0,0,0,0,0,0,7], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,6,"<a href=\"Auditing.php.html#9\">Auditing<\/a>"],[0,7,"<a href=\"CacheBypasses\/AbstractCacheBypass.php.html#8\">AbstractCacheBypass<\/a>"],[0,5,"<a href=\"CacheBypasses\/AjaxMode.php.html#5\">AjaxMode<\/a>"],[0,5,"<a href=\"CacheBypasses\/CronMode.php.html#5\">CronMode<\/a>"],[0,2,"<a href=\"CacheBypasses\/HttpRequestMethod.php.html#5\">HttpRequestMethod<\/a>"],[0,3,"<a href=\"CacheBypasses\/LegacyConstants.php.html#5\">LegacyConstants<\/a>"],[0,3,"<a href=\"CacheBypasses\/LoggedInUser.php.html#5\">LoggedInUser<\/a>"],[0,5,"<a href=\"CacheBypasses\/MaintenanceMode.php.html#5\">MaintenanceMode<\/a>"],[0,2,"<a href=\"CacheBypasses\/PhpError.php.html#5\">PhpError<\/a>"],[0,2,"<a href=\"CacheBypasses\/QueryString.php.html#5\">QueryString<\/a>"],[0,6,"<a href=\"CacheBypasses\/WpCookies.php.html#5\">WpCookies<\/a>"],[0,3,"<a href=\"CacheBypasses\/WpCorePage.php.html#5\">WpCorePage<\/a>"],[0,3,"<a href=\"CacheBypasses\/WpInstalling.php.html#5\">WpInstalling<\/a>"],[0,4,"<a href=\"CacheExclusions.php.html#5\">CacheExclusions<\/a>"],[100,30,"<a href=\"CacheKeyGenerator.php.html#8\">CacheKeyGenerator<\/a>"],[0,61,"<a href=\"CacheMaster.php.html#25\">CacheMaster<\/a>"],[0,30,"<a href=\"CacheSettings.php.html#7\">CacheSettings<\/a>"],[0,6,"<a href=\"ErrorHandler.php.html#5\">ErrorHandler<\/a>"],[0,8,"<a href=\"Logging.php.html#10\">Logging<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"Auditing.php.html#13\">Auditing::__construct<\/a>"],[0,2,"<a href=\"Auditing.php.html#18\">Auditing::get_instance<\/a>"],[0,1,"<a href=\"Auditing.php.html#28\">Auditing::audit_url_requested<\/a>"],[0,1,"<a href=\"Auditing.php.html#33\">Auditing::audit_cache_disabled_for_request<\/a>"],[0,1,"<a href=\"Auditing.php.html#38\">Auditing::audit_request_written_to_disk<\/a>"],[0,1,"<a href=\"CacheBypasses\/AbstractCacheBypass.php.html#14\">AbstractCacheBypass::__construct<\/a>"],[0,1,"<a href=\"CacheBypasses\/AbstractCacheBypass.php.html#20\">AbstractCacheBypass::get_url<\/a>"],[0,1,"<a href=\"CacheBypasses\/AbstractCacheBypass.php.html#25\">AbstractCacheBypass::get_query_string<\/a>"],[0,1,"<a href=\"CacheBypasses\/AbstractCacheBypass.php.html#30\">AbstractCacheBypass::get_method<\/a>"],[0,1,"<a href=\"CacheBypasses\/AbstractCacheBypass.php.html#35\">AbstractCacheBypass::get_path_url<\/a>"],[0,1,"<a href=\"CacheBypasses\/AbstractCacheBypass.php.html#42\">AbstractCacheBypass::get_cookies<\/a>"],[0,1,"<a href=\"CacheBypasses\/AbstractCacheBypass.php.html#47\">AbstractCacheBypass::log_request_as_not_cacheable<\/a>"],[0,5,"<a href=\"CacheBypasses\/AjaxMode.php.html#7\">AjaxMode::is_cacheable<\/a>"],[0,5,"<a href=\"CacheBypasses\/CronMode.php.html#7\">CronMode::is_cacheable<\/a>"],[0,2,"<a href=\"CacheBypasses\/HttpRequestMethod.php.html#7\">HttpRequestMethod::is_cacheable<\/a>"],[0,3,"<a href=\"CacheBypasses\/LegacyConstants.php.html#7\">LegacyConstants::is_cacheable<\/a>"],[0,3,"<a href=\"CacheBypasses\/LoggedInUser.php.html#7\">LoggedInUser::is_cacheable<\/a>"],[0,5,"<a href=\"CacheBypasses\/MaintenanceMode.php.html#7\">MaintenanceMode::is_cacheable<\/a>"],[0,2,"<a href=\"CacheBypasses\/PhpError.php.html#7\">PhpError::is_cacheable<\/a>"],[0,2,"<a href=\"CacheBypasses\/QueryString.php.html#7\">QueryString::is_cacheable<\/a>"],[0,6,"<a href=\"CacheBypasses\/WpCookies.php.html#7\">WpCookies::is_cacheable<\/a>"],[0,3,"<a href=\"CacheBypasses\/WpCorePage.php.html#7\">WpCorePage::is_cacheable<\/a>"],[0,3,"<a href=\"CacheBypasses\/WpInstalling.php.html#7\">WpInstalling::is_cacheable<\/a>"],[0,1,"<a href=\"CacheExclusions.php.html#9\">CacheExclusions::__construct<\/a>"],[0,2,"<a href=\"CacheExclusions.php.html#14\">CacheExclusions::get_instance<\/a>"],[0,1,"<a href=\"CacheExclusions.php.html#25\">CacheExclusions::get_exclusion_rule_for_request<\/a>"],[100,1,"<a href=\"CacheKeyGenerator.php.html#15\">CacheKeyGenerator::get_mapping_of_urls_to_files<\/a>"],[100,2,"<a href=\"CacheKeyGenerator.php.html#23\">CacheKeyGenerator::get_cache_lookup_counts_for_url<\/a>"],[100,1,"<a href=\"CacheKeyGenerator.php.html#40\">CacheKeyGenerator::sanitize_host_for_cache_filename<\/a>"],[100,10,"<a href=\"CacheKeyGenerator.php.html#69\">CacheKeyGenerator::create_url_from_server_variables<\/a>"],[100,8,"<a href=\"CacheKeyGenerator.php.html#101\">CacheKeyGenerator::local_cache_filename_from_url<\/a>"],[100,3,"<a href=\"CacheKeyGenerator.php.html#106\">CacheKeyGenerator::anonymousFunction:106#623<\/a>"],[100,5,"<a href=\"CacheKeyGenerator.php.html#166\">CacheKeyGenerator::sanitize_path_for_cache_filename<\/a>"],[0,1,"<a href=\"CacheMaster.php.html#44\">CacheMaster::__construct<\/a>"],[0,2,"<a href=\"CacheMaster.php.html#68\">CacheMaster::get_instance<\/a>"],[0,1,"<a href=\"CacheMaster.php.html#86\">CacheMaster::is_user_logged_in<\/a>"],[0,1,"<a href=\"CacheMaster.php.html#92\">CacheMaster::_set_ajax_only_hooks<\/a>"],[0,7,"<a href=\"CacheMaster.php.html#99\">CacheMaster::_setup_main_hooks<\/a>"],[0,3,"<a href=\"CacheMaster.php.html#164\">CacheMaster::_maybe_purge_cached_file_on_non_GET_method<\/a>"],[0,4,"<a href=\"CacheMaster.php.html#179\">CacheMaster::is_request_cacheable<\/a>"],[0,2,"<a href=\"CacheMaster.php.html#222\">CacheMaster::_flag_request_as_cacheable<\/a>"],[0,1,"<a href=\"CacheMaster.php.html#233\">CacheMaster::_flag_request_as_not_cacheable<\/a>"],[0,5,"<a href=\"CacheMaster.php.html#238\">CacheMaster::_maybe_serve_cached_file<\/a>"],[0,2,"<a href=\"CacheMaster.php.html#299\">CacheMaster::_setup_actual_request_caching<\/a>"],[0,7,"<a href=\"CacheMaster.php.html#319\">CacheMaster::handle_ob_complete<\/a>"],[0,3,"<a href=\"CacheMaster.php.html#399\">CacheMaster::is_https_page<\/a>"],[0,3,"<a href=\"CacheMaster.php.html#416\">CacheMaster::setup_caching<\/a>"],[0,1,"<a href=\"CacheMaster.php.html#442\">CacheMaster::handle_action_comment_post<\/a>"],[0,1,"<a href=\"CacheMaster.php.html#452\">CacheMaster::handle_filter_redirect_filter<\/a>"],[0,1,"<a href=\"CacheMaster.php.html#461\">CacheMaster::handle_action_publish_post<\/a>"],[0,2,"<a href=\"CacheMaster.php.html#469\">CacheMaster::delete_file_from_permalink<\/a>"],[0,2,"<a href=\"CacheMaster.php.html#488\">CacheMaster::clear_entire_page_cache<\/a>"],[0,2,"<a href=\"CacheMaster.php.html#501\">CacheMaster::schedule_cache_clear<\/a>"],[0,1,"<a href=\"CacheMaster.php.html#524\">CacheMaster::handle_action_clear_page_cache<\/a>"],[0,1,"<a href=\"CacheMaster.php.html#530\">CacheMaster::file_exists<\/a>"],[0,1,"<a href=\"CacheMaster.php.html#535\">CacheMaster::delete_file<\/a>"],[0,1,"<a href=\"CacheMaster.php.html#540\">CacheMaster::write_file<\/a>"],[0,6,"<a href=\"CacheMaster.php.html#545\">CacheMaster::delete_cache_dir_contents<\/a>"],[0,1,"<a href=\"CacheSettings.php.html#13\">CacheSettings::__construct<\/a>"],[0,2,"<a href=\"CacheSettings.php.html#18\">CacheSettings::get_instance<\/a>"],[0,3,"<a href=\"CacheSettings.php.html#28\">CacheSettings::get_cache_folder_abs<\/a>"],[0,2,"<a href=\"CacheSettings.php.html#51\">CacheSettings::get_log_file_abs<\/a>"],[0,3,"<a href=\"CacheSettings.php.html#61\">CacheSettings::get_log_folder_abs<\/a>"],[0,3,"<a href=\"CacheSettings.php.html#78\">CacheSettings::get_log_file_name<\/a>"],[0,2,"<a href=\"CacheSettings.php.html#97\">CacheSettings::get_max_file_age<\/a>"],[0,2,"<a href=\"CacheSettings.php.html#111\">CacheSettings::get_min_page_size<\/a>"],[0,5,"<a href=\"CacheSettings.php.html#121\">CacheSettings::get_fs_permissions_for_cache<\/a>"],[0,2,"<a href=\"CacheSettings.php.html#137\">CacheSettings::get_fs_permission_for_log_file<\/a>"],[0,2,"<a href=\"CacheSettings.php.html#142\">CacheSettings::get_fs_permission_for_log_dir<\/a>"],[0,2,"<a href=\"CacheSettings.php.html#147\">CacheSettings::get_logging_level<\/a>"],[0,1,"<a href=\"CacheSettings.php.html#157\">CacheSettings::get_is_auditing_enabled<\/a>"],[0,4,"<a href=\"ErrorHandler.php.html#15\">ErrorHandler::handle_exception<\/a>"],[0,2,"<a href=\"ErrorHandler.php.html#40\">ErrorHandler::handle_error<\/a>"],[0,3,"<a href=\"Logging.php.html#18\">Logging::__construct<\/a>"],[0,1,"<a href=\"Logging.php.html#64\">Logging::anonymousFunction:64#363<\/a>"],[0,2,"<a href=\"Logging.php.html#72\">Logging::get_instance<\/a>"],[0,1,"<a href=\"Logging.php.html#82\">Logging::get_logger<\/a>"],[0,1,"<a href=\"Logging.php.html#87\">Logging::log_request_as_not_cacheable<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
